@@ -4,6 +4,8 @@
 
 // setting up array with random numbers for card images
 
+// We can also use Array.from() to create an array of random numbers
+
 const random = function () {
   return Math.trunc(Math.random() * 8);
 };
