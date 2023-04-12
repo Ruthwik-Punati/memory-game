@@ -1,0 +1,320 @@
+* {
+  /* border: 1px solid red; */
+
+  /* box-sizing: border-box; */
+
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+body {
+  background-color: pink;
+  height: 100vh;
+  /* overflow: hidden; */
+  /* overflow: hidden; */
+}
+
+.displayNone {
+  display: none;
+}
+
+.cover {
+  backdrop-filter: blur(4px);
+  position: absolute;
+  width: 100vw;
+  height: 120vh;
+  z-index: 1000;
+  background-color: rgb(135, 143, 116);
+
+  text-align: center;
+}
+
+.cover h5 {
+  font-size: medium;
+  text-align: center;
+  width: 90vw;
+  margin: auto;
+}
+.gameName {
+  height: 4rem;
+  width: 100vw;
+  margin: auto;
+  margin-top: 10vh;
+}
+
+.gameName img {
+  float: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+.gameName h5 {
+  text-align: center;
+  line-height: 3rem;
+
+  font-size: x-large;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(236, 238, 241);
+}
+
+.powered {
+  margin-top: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.powered span {
+  font-style: italic;
+  font-weight: bold;
+
+  font-size: large;
+}
+
+.playNow {
+  color: white;
+  background-color: red;
+  border-radius: 20px;
+  padding: 0.7rem;
+  text-align: center;
+  margin-top: 80px;
+}
+.logo {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  height: 4rem;
+  text-align: center;
+  box-shadow: 1px 0 5px rgb(85, 83, 83);
+  z-index: 500;
+}
+
+.logo h5 {
+  color: rgb(111, 111, 108);
+
+  text-align: center;
+  transform: translate(-50%, 0);
+  list-style-type: none;
+  line-height: 4rem;
+  font-size: medium;
+  font-style: italic;
+  font-weight: 30px;
+  margin-left: 50%;
+  width: 80%;
+}
+.logo img {
+  position: relative;
+  top: 2rem;
+
+  transform: translate(0, -20px);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+/* .container {
+  width: 70%;
+  float: left;
+} */
+.cardContainer {
+  position: relative;
+  margin: auto;
+  margin-bottom: 30px;
+  top: 50px;
+  /* left: 50%;
+  transform: translate(-97%, 0);  */
+
+  width: 473px;
+  height: auto;
+
+  padding: 10px;
+  border: 2px solid rgb(114, 102, 102);
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card {
+  float: left;
+  margin: 1.2%;
+  width: 105px;
+  height: 105px;
+  perspective: 1000px;
+}
+
+.card__inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card__inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front {
+  background-color: rgb(134, 106, 106);
+}
+.card__face--back {
+  transform: rotateY(180deg);
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+
+  object-fit: cover;
+}
+
+.ending {
+  color: red;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.data {
+  position: relative;
+  text-align: center;
+  float: right;
+  width: 30%;
+  height: 100vh;
+  background-color: lightblue;
+  z-index: -300;
+  box-shadow: 0 2px 5px grey;
+}
+
+.data p {
+  color: white;
+  line-height: 25px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+.data span {
+  color: white;
+  font-size: large;
+}
+
+.overQuote {
+  background-color: rgba(84, 69, 69, 0.5);
+
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  backdrop-filter: blur(4px);
+  z-index: 300;
+  overflow: hidden;
+}
+.overQuote p {
+  color: white;
+  font-size: larger;
+  font-style: italic;
+
+  line-height: 30px;
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 2px 2px 18px rgb(152, 148, 148);
+}
+
+.overQuote span {
+  position: relative;
+  left: 100px;
+  font-style: normal;
+  color: rgb(244, 196, 196);
+
+  margin-right: 30px;
+}
+
+.slideUp {
+  margin-bottom: 100px;
+}
+
+.playAgain {
+  color: white;
+  background-color: red;
+  border-radius: 20px;
+  padding: 0.7rem 0.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  /* * {
+    border: 1px solid red;
+  } */
+  /* body {width:650px;
+      background-color: white;
+    } */
+
+  .cardContainer {
+    position: relative;
+    left: 0;
+    width: 97vw;
+    transform: translate(0, 0);
+    margin: auto;
+    border-radius: none;
+    padding: 5px;
+    top: 20px;
+  }
+
+  .card {
+    margin: 0.6%;
+    width: 23.8%;
+    height: 21vw;
+  }
+
+  .card__face {
+    border-radius: 6px;
+  }
+
+  .data {
+    float: none;
+    height: 80px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .data p {
+    position: relative;
+    left: 50%;
+    transform: translate(-100%, 0);
+    padding-top: 15px;
+    margin: auto;
+    text-align: center;
+
+    width: 150px;
+    float: left;
+  }
+  .data span {
+    text-align: center;
+  }
+  .overQuote {
+    font-size: larger;
+  }
+  .overQuote p {
+    line-height: 50px;
+    width: 70%;
+  }
+
+  .overQuote span {
+    font-size: larger;
+  }
+}
